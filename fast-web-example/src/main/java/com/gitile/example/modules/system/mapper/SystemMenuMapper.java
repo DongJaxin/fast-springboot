@@ -13,7 +13,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 菜单管理 Mapper 接口
  * </p>
  *
- * @author 涂灵峰
+ * @author local
  * @since 2018-07-04
  */
 public interface SystemMenuMapper extends BaseMapper<SystemMenu> {

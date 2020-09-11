@@ -8,7 +8,7 @@ import com.gitile.example.modules.system.entity.SystemLog;
  * 系统日志 服务类
  * </p>
  *
- * @author 涂灵峰
+ * @author local
  * @since 2018-07-04
  */
 public interface SystemLogService extends IService<SystemLog> {

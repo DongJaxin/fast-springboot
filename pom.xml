@@ -16,7 +16,7 @@
 	<developers>
 		<developer>
 			<id>tulingfeng</id>
-			<name>涂灵峰</name>
+			<name>local</name>
 			<email>xtotly@aliyun.com</email>
 		</developer>
 	</developers>
@@ -31,7 +31,7 @@
 		<swagger.version>2.9.2</swagger.version>
 		<mysql-connector-java.version>5.1.45</mysql-connector-java.version>
 		<jjwt.version>0.9.0</jjwt.version>
-		<hutool.version>4.0.12</hutool.version>
+		<hutool.version>5.4.1</hutool.version>
 		<hutooljsch.version>0.1.54</hutooljsch.version>
 		<!-- Plugin的属性 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -126,6 +126,17 @@
 				<artifactId>jsch</artifactId>
 				<version>${hutooljsch.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+				<version>2.3.3.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>2.1.4.RELEASE</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

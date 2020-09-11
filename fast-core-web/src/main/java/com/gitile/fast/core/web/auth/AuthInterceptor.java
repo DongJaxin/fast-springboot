@@ -30,15 +30,17 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			request.setAttribute(REQUEST_USER, loginUser);
 			if(handler instanceof HandlerMethod) {
 	        	AuthPermissions annotation = ((HandlerMethod) handler).getMethodAnnotation(AuthPermissions.class);
-            	// 验证权限
-            	String perms = annotation.value();
-            	if(FastStringUtils.isNotEmpty(perms)) {
-            		boolean hasAuth = authService.isPermission(loginUser.getId(), perms);
-            		if(hasAuth) {
-            			return true;
-            		}
-            	}
-            	throw new FastUnAuthException("NoPermission");
+	        	if (annotation != null) {
+					// 验证权限
+					String perms = annotation.value();
+					if(FastStringUtils.isNotEmpty(perms)) {
+						boolean hasAuth = authService.isPermission(loginUser.getId(), perms);
+						if(hasAuth) {
+							return true;
+						}
+					}
+					throw new FastUnAuthException("NoPermission");
+				}
 	        }
 			return true;
 		}

@@ -13,7 +13,6 @@
         <result column="icon" property="icon" />
         <result column="sort" property="sort" />
     </resultMap>
-    
    	<!-- 查询用户的所有权限 -->
 	<select id="selectUserAllPerms" resultType="string">
 		SELECT 

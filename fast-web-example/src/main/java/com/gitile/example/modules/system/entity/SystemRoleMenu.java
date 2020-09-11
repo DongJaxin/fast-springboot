@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 角色与菜单对应关系
  * </p>
  *
- * @author 涂灵峰
+ * @author local
  * @since 2018-07-07
  */
 @TableName("system_role_menu")

@@ -32,7 +32,7 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo apiInfo() {
-		Contact contact = new Contact("涂灵峰", "https://github.com/gitile", "xtotly@aliyun.com");
+		Contact contact = new Contact("local", "https://github.com/gitile", "xtotly@aliyun.com");
 		return new ApiInfo("后台接口文档", "后台接口文档说明", "1.0.0", "http://www.gitile.com", contact, "Apache License Version 2.0", "https://www.apache.org/licenses/LICENSE-2.0", new ArrayList<>());
 	}
 

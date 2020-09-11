@@ -19,7 +19,7 @@ import com.gitile.fast.core.web.utils.FastAuthUtils;
  * 系统用户 服务实现类
  * </p>
  *
- * @author 涂灵峰
+ * @author local
  * @since 2018-07-04
  */
 @Service

@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 菜单管理 服务类
  * </p>
  *
- * @author 涂灵峰
+ * @author local
  * @since 2018-07-04
  */
 public interface SystemMenuService extends IService<SystemMenu> {
